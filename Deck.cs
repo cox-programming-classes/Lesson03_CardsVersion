@@ -11,7 +11,10 @@ public record Deck
         _cards = new List<Card>();
         foreach (var suit in new[] { Suit.Hearts, Suit.Diamonds, Suit.Clubs, Suit.Spades })
         {
-            foreach (var value in new[] { Value.Ace, Value.Two, Value.Three, Value.Four, Value.Five, Value.Six, Value.Seven, Value.Eight, Value.Nine, Value.Ten, Value.Jack, Value.Queen, Value.King })
+            foreach (var value in new[] { 
+                Value.Ace, Value.Two, Value.Three, Value.Four, 
+                Value.Five, Value.Six, Value.Seven, Value.Eight, Value.Nine, 
+                Value.Ten, Value.Jack, Value.Queen, Value.King })
             {
                 _cards.Add(new Card(suit, value));
             }
