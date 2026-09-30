@@ -1,38 +1,63 @@
 {
   "version": 4,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "LanguageExt.Core/5.0.0-beta-77": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/LanguageExt.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/LanguageExt.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "LanguageExt.Core/5.0.0-beta-77": {
+      "sha512": "zVBqn2alHIDTOSjgWDUo31irEg59ZfM6T8e24UcUn6o/F+5Qr0jRjGPp2LzME7PHyKh+crK+boBmdCAFguwqjw==",
+      "type": "package",
+      "path": "languageext.core/5.0.0-beta-77",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.nuget.md",
+        "lang-ext-small.png",
+        "languageext.core.5.0.0-beta-77.nupkg.sha512",
+        "languageext.core.nuspec",
+        "lib/net10.0/LanguageExt.Core.dll",
+        "lib/net10.0/LanguageExt.Core.xml"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "LanguageExt.Core >= 5.0.0-beta-77"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\jcox\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/jcox/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jcox\\Documents\\GitHub\\Lesson03_CardsVersion\\Lesson03_ExtensionsAndConcerns.csproj",
+      "projectUniqueName": "/Users/jcox/Documents/GitHub/Lesson03_CardsVersion/Lesson03_ExtensionsAndConcerns.csproj",
       "projectName": "Lesson03_ExtensionsAndConcerns",
-      "projectPath": "C:\\Users\\jcox\\Documents\\GitHub\\Lesson03_CardsVersion\\Lesson03_ExtensionsAndConcerns.csproj",
-      "packagesPath": "C:\\Users\\jcox\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jcox\\Documents\\GitHub\\Lesson03_CardsVersion\\obj\\",
+      "projectPath": "/Users/jcox/Documents/GitHub/Lesson03_CardsVersion/Lesson03_ExtensionsAndConcerns.csproj",
+      "packagesPath": "/Users/jcox/.nuget/packages/",
+      "outputPath": "/Users/jcox/Documents/GitHub/Lesson03_CardsVersion/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\jcox\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/jcox/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -58,6 +83,12 @@
       "net10.0": {
         "framework": "net10.0",
         "targetAlias": "net10.0",
+        "dependencies": {
+          "LanguageExt.Core": {
+            "target": "Package",
+            "version": "[5.0.0-beta-77, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -74,7 +105,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/Users/jcox/.dotnet/sdk/10.0.400/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
